@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Global Mountain &mdash; Explore the World's Greatest Journeys</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Global Mountain offers curated travel experiences to the world's most breathtaking destinations. Book your dream journey today.">
+  <meta name="keywords" content="travel, tours, destinations, mountain trips, global travel, adventure tours, Pakistan tours, Naran, Skardu, Hunza">
+  <meta name="author" content="Global Mountain">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/GB-logo.png">
+  <link rel="apple-touch-icon" href="images/GB-logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ─── CSS VARIABLES ─────────────────────────────────── */
+    :root {
+      --ink:     #0f0e0c;
+      --cream:   #faf8f4;
+      --sand:    #ede8df;
+      --gold:    #b5813e;
+      --gold-lt: #d4a562;
+      --muted:   #7a7268;
+      --white:   #ffffff;
+      --nav-h:   88px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ─── TOP ANNOUNCEMENT BAR ──────────────────────────── */
+    .top-bar {
+      background: var(--ink);
+      color: rgba(255,255,255,0.55);
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 8px 0;
+      text-align: center;
+    }
+    .top-bar a { color: var(--gold); text-decoration: none; }
+    .top-bar span { margin: 0 16px; }
+
+    /* ─── NAVBAR ─────────────────────────────────────────── */
+    .site-navbar {
+      position: fixed !important;
+      top: 28px;
+      left: 0; right: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(250,248,244,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--sand);
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      transition: box-shadow 0.3s, top 0.3s;
+    }
+    .site-navbar.scrolled {
+      top: 0;
+      box-shadow: 0 4px 40px rgba(15,14,12,0.08);
+    }
+    body { padding-top: calc(var(--nav-h) + 28px); }
+
+    /* Logo */
+    .navbar-logo img {
+      height: 70px;
+      width: auto;
+      transition: opacity 0.2s;
+    }
+    .navbar-logo img:hover { opacity: 0.85; }
+
+    /* Nav links */
+    .site-menu > li > a {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted) !important;
+      transition: color 0.2s;
+      padding: 8px 14px !important;
+      position: relative;
+    }
+    .site-menu > li > a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 14px; right: 14px;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .site-menu > li.active > a,
+    .site-menu > li > a:hover {
+      color: var(--ink) !important;
+    }
+    .site-menu > li.active > a::after,
+    .site-menu > li > a:hover::after { transform: scaleX(1); }
+
+    /* Dropdown */
+    .site-menu .dropdown {
+      background: var(--ink);
+      border-top: 2px solid var(--gold);
+      padding: 8px 0;
+      min-width: 190px;
+    }
+    .site-menu .dropdown li a {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6) !important;
+      padding: 8px 20px !important;
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .site-menu .dropdown li a:hover {
+      color: var(--gold) !important;
+      padding-left: 26px !important;
+    }
+
+    /* Social icons in header */
+    .header-social a {
+      width: 34px; height: 34px;
+      border: 1px solid #ccc;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 6px;
+      font-size: 0.8rem;
+      transition: all 0.25s;
+    }
+    .header-social a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ─── HERO SLIDER ────────────────────────────────────── */
+    .site-blocks-cover {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .site-blocks-cover.overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10,8,6,0.55) 0%, rgba(10,8,6,0.3) 50%, rgba(10,8,6,0.6) 100%);
+    }
+    .site-blocks-cover .container { position: relative; z-index: 2; }
+    .site-blocks-cover h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+    }
+    .site-blocks-cover p {
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.8);
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.8;
+    }
+    .hero-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-lt);
+      border: 1px solid var(--gold-lt);
+      padding: 5px 16px;
+      margin-bottom: 20px;
+    }
+
+    /* ─── SECTION HEADINGS ───────────────────────────────── */
+    .section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* ─── FEATURE CARDS (3 top cards) ───────────────────── */
+    .feature-card-wrap {
+      margin-top: -80px;
+      position: relative;
+      z-index: 10;
+    }
+    .feature-card {
+      background: var(--white);
+      border-bottom: 3px solid transparent;
+      padding: 0;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 40px rgba(15,14,12,0.08);
+    }
+    .feature-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 60px rgba(15,14,12,0.12);
+    }
+    .feature-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .feature-card:hover img { transform: scale(1.04); }
+    .feature-card-body {
+      padding: 24px 28px 28px;
+    }
+    .feature-card-body h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .feature-card-body p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.7;
+    }
+    .feature-card-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 14px;
+      text-decoration: none;
+      transition: gap 0.2s;
+    }
+    .feature-card-arrow:hover { gap: 14px; color: var(--gold); }
+
+    /* ─── SERVICES (3 mini) ──────────────────────────────── */
+    .service-mini {
+      padding: 36px 32px;
+      background: var(--white);
+      border-left: 3px solid transparent;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      height: 100%;
+    }
+    .service-mini:hover {
+      border-color: var(--gold);
+      box-shadow: 0 8px 40px rgba(15,14,12,0.07);
+    }
+    .service-mini .unit-4-icon span {
+      font-size: 2rem;
+      color: var(--gold) !important;
+    }
+    .service-mini h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 14px 0 10px;
+    }
+    .service-mini p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .service-mini a {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .service-mini a:hover { color: var(--ink); }
+
+    /* ─── TESTIMONIALS ───────────────────────────────────── */
+    .testimonial-section { background: var(--sand); }
+    .testimonial-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+    .testimonial-author {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+    .testimonial-author strong { color: var(--gold); }
+    .testimonial-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+    .testimonial-box {
+      background: var(--white);
+      padding: 48px 44px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 6rem;
+      line-height: 0.6;
+      color: var(--gold);
+      opacity: 0.3;
+      margin-bottom: 16px;
+    }
+
+    /* ─── DESTINATIONS GRID ──────────────────────────────── */
+    .dest-card {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      text-decoration: none;
+    }
+    .dest-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(.4,0,.2,1);
+      display: block;
+    }
+    .dest-card:hover img { transform: scale(1.08); }
+    .dest-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10,8,6,0.75) 0%, transparent 55%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px 22px;
+      transition: background 0.3s;
+    }
+    .dest-card:hover .dest-card-overlay {
+      background: linear-gradient(to top, rgba(10,8,6,0.85) 0%, rgba(10,8,6,0.2) 55%);
+    }
+    .dest-card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .dest-card-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-lt);
+    }
+    .dest-card-explore {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-top: 10px;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .dest-card:hover .dest-card-explore {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── VIDEO SECTION ──────────────────────────────────── */
+    .video-section {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 120px 0;
+    }
+    .video-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,8,6,0.65);
+    }
+    .video-section .container { position: relative; z-index: 2; }
+    .play-btn {
+      width: 80px; height: 80px;
+      border: 2px solid rgba(255,255,255,0.6);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      margin-bottom: 28px;
+    }
+    .play-btn:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--white);
+      transform: scale(1.1);
+    }
+    .video-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    /* ─── FULL SERVICES ──────────────────────────────────── */
+    .service-full {
+      padding: 32px 28px;
+      border: 1px solid var(--sand);
+      background: var(--white);
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+      height: 100%;
+    }
+    .service-full:hover {
+      border-color: var(--gold);
+      box-shadow: 0 12px 48px rgba(15,14,12,0.07);
+      transform: translateY(-4px);
+    }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: rgba(181,129,62,0.1);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+    }
+    .service-icon span { font-size: 1.4rem; color: var(--gold) !important; }
+    .service-full h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .service-full p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+    .service-full a {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* ─── BLOG ───────────────────────────────────────────── */
+    .blog-card {
+      background: var(--white);
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .blog-card:hover {
+      box-shadow: 0 12px 48px rgba(15,14,12,0.1);
+      transform: translateY(-4px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .blog-card:hover img { transform: scale(1.04); }
+    .blog-card-body { padding: 28px 30px 32px; }
+    .blog-category {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .blog-card-body h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+    .blog-card-body h2 a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .blog-card-body h2 a:hover { color: var(--gold); }
+    .blog-meta {
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+    .blog-card-body p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    /* ─── CTA STRIP ──────────────────────────────────────── */
+    .cta-strip {
+      background: var(--ink);
+      padding: 80px 0;
+    }
+    .cta-strip h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+    .cta-strip p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.88rem;
+      line-height: 1.8;
+    }
+
+    /* ─── BUTTONS ────────────────────────────────────────── */
+    .btn-gold {
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      padding: 14px 36px;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-gold:hover {
+      background: #9e6d2e;
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 13px 36px;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-outline-gold:hover {
+      background: var(--gold);
+      color: var(--white);
+    }
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 13px 36px;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-outline-white:hover {
+      background: var(--white);
+      color: var(--ink);
+      border-color: var(--white);
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    .site-footer {
+      background: #0f0e0c;
+      color: #888;
+      font-family: 'Jost', sans-serif;
+    }
+    .footer-top { padding: 72px 0 56px; }
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
+    }
+    .footer-brand-name span { color: var(--gold); }
+    .footer-about {
+      font-size: 0.83rem;
+      line-height: 1.9;
+      color: #666;
+      margin-bottom: 24px;
+    }
+    .footer-social a {
+      width: 36px; height: 36px;
+      border: 1px solid #222;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      text-decoration: none;
+      margin-right: 8px;
+      font-size: 0.8rem;
+      transition: all 0.25s;
+    }
+    .footer-social a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .footer-heading {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--white);
+      font-weight: 500;
+      margin-bottom: 22px;
+    }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a {
+      font-size: 0.85rem;
+      color: #666;
+      text-decoration: none;
+      transition: color 0.2s, padding-left 0.2s;
+      display: inline-block;
+    }
+    .footer-links a:hover {
+      color: var(--gold);
+      padding-left: 6px;
+    }
+    .footer-contact-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .footer-contact-icon { color: var(--gold); font-size: 0.9rem; margin-top: 2px; flex-shrink: 0; }
+    .footer-contact-text { font-size: 0.83rem; color: #666; line-height: 1.7; }
+    .footer-contact-text a { color: #666; text-decoration: none; transition: color 0.2s; }
+    .footer-contact-text a:hover { color: var(--gold); }
+    .footer-newsletter input {
+      background: transparent;
+      border: 1px solid #222;
+      color: var(--white);
+      padding: 11px 16px;
+      font-size: 0.82rem;
+      width: 100%;
+      outline: none;
+      margin-bottom: 10px;
+      font-family: 'Jost', sans-serif;
+      transition: border-color 0.2s;
+    }
+    .footer-newsletter input:focus { border-color: var(--gold); }
+    .footer-newsletter input::placeholder { color: #444; }
+    .footer-newsletter button {
+      background: var(--gold);
+      color: var(--white);
+      border: none;
+      padding: 11px 16px;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 100%;
+      font-family: 'Jost', sans-serif;
+      transition: background 0.2s;
+    }
+    .footer-newsletter button:hover { background: #9e6d2e; }
+    .footer-divider { border-top: 1px solid #1a1814; }
+    .footer-bottom {
+      padding: 20px 0;
+      font-size: 0.78rem;
+      color: #444;
+    }
+
+    /* ─── WHATSAPP BUTTON ────────────────────────────────── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      width: 56px; height: 56px;
+      background: #25D366;
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s;
+      font-size: 1.5rem;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.12);
+      background: #1ebe5a;
+      color: var(--white);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+    }
+
+    /* ─── TOUR POPUP ─────────────────────────────────────── */
+    .tour_popup {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      z-index: 99999;
+      align-items: center;
+      justify-content: center;
+    }
+    .tour_popup_content {
+      background: var(--white);
+      max-width: 480px;
+      width: 90%;
+      margin: auto;
+      padding: 44px 40px;
+      position: relative;
+      border-top: 3px solid var(--gold);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.25);
+      animation: popupFade 0.3s ease;
+    }
+    @keyframes popupFade {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .tour_popup_content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .tour_popup_content p {
+      font-size: 0.87rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .close_popup {
+      position: absolute;
+      top: 16px; right: 20px;
+      font-size: 1.3rem;
+      color: #bbb;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .close_popup:hover { color: var(--ink); }
+    .whatsapp_btn_popup {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--white);
+      padding: 13px 26px;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .whatsapp_btn_popup:hover {
+      background: #1ebe5a;
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ─── DIVIDER ────────────────────────────────────────── */
+    .ornament-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+      margin: 0 auto 48px;
+    }
+    .ornament-divider::before,
+    .ornament-divider::after {
+      content: '';
+      flex: 1;
+      max-width: 80px;
+      height: 1px;
+      background: var(--sand);
+    }
+    .ornament-divider span {
+      color: var(--gold);
+      font-size: 1rem;
+    }
+
+    /* ─── MOBILE ─────────────────────────────────────────── */
+    @media (max-width: 1199px) {
+      .header-social { display: none; }
+    }
+    @media (max-width: 767px) {
+      .feature-card-wrap { margin-top: 0; }
+      .testimonial-img { height: 280px; }
+      .site-blocks-cover h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span>✦ Best Price Guarantee</span>
+  <span>|</span>
+  <span>24/7 Support: <a href="tel:+923212039066">+92 321 2039066</a></span>
+  <span>|</span>
+  <span>Free cancellation on select tours</span>
+</div>
+
+<div class="site-wrap">
+
+  <!-- MOBILE MENU -->
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <header class="site-navbar py-1" role="banner" id="mainHeader">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-6 col-xl-2 navbar-logo">
+          <h1 class="mb-0">
+            <a href="index.html">
+              <img src="images/GB-logo.png" alt="Global Mountain">
+            </a>
+          </h1>
+        </div>
+
+        <div class="col-10 col-md-8 d-none d-xl-block">
+          <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="has-children">
+                <a href="destination.html">Destinations</a>
+                <ul class="dropdown">
+                  <li><a href="destination.html">Naran</a></li>
+                  <li><a href="destination.html">Swat</a></li>
+                  <li><a href="destination.html">Skardu</a></li>
+                  <li><a href="destination.html">Fairy Meadows</a></li>
+                  <li><a href="destination.html">Hunza Valley</a></li>
+                  <li><a href="destination.html">Sikh-Yatra</a></li>
+                </ul>
+              </li>
+              <li><a href="discount.html">Discount</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-6 col-xl-2 text-right">
+          <div class="header-social d-none d-xl-inline-flex align-items-center">
+            <a href="https://www.linkedin.com/company/globalmountain" target="_blank" title="LinkedIn"
+              onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';"
+              onmouseout="this.style.borderColor='#ccc'; this.style.color='var(--muted)';">
+              <span class="icon-linkedin"></span>
+            </a>
+            <a href="https://www.facebook.com/share/1BEBB5dZsY/" target="_blank" title="Facebook"
+              onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';"
+              onmouseout="this.style.borderColor='#ccc'; this.style.color='var(--muted)';">
+              <span class="icon-facebook"></span>
+            </a>
+            <a href="https://www.instagram.com/globalmountaintravelsandtours?igsh=MTc0cDJjNXl0aGVkMg==" target="_blank" title="Instagram"
+              onmouseover="this.style.borderColor='var(--gold)'; this.style.color='var(--gold)';"
+              onmouseout="this.style.borderColor='#ccc'; this.style.color='var(--muted)';">
+              <span class="icon-instagram"></span>
+            </a>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO SLIDER ──────────────────────────────────────── -->
+  <div class="slide-one-item home-slider owl-carousel">
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/waqar-15.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
+            <span class="hero-label">Global Mountain</span>
+            <h1 class="text-white font-weight-light">Never Stop<br>Exploring</h1>
+            <p>From ancient temples to modern skylines — we craft journeys that stay with you forever. Your next adventure is just one click away.</p>
+            <a href="contact.html" class="btn-gold">Start Your Journey</a>
+            &nbsp;&nbsp;
+            <a href="destination.html" class="btn-outline-white">View Destinations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/waqar-25.png);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="300">
+            <span class="hero-label">Discover Pakistan</span>
+            <h1 class="text-white font-weight-light">Fall in Love with<br>Every Destination</h1>
+            <p>Every mountain has a story, every path leads to wonder. Let Global Mountain guide you to the places that take your breath away.</p>
+            <a href="destination.html" class="btn-gold">Explore Destinations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── FEATURE CARDS ────────────────────────────────────── -->
+  <div class="site-section" style="padding-top: 0; padding-bottom: 0; background: var(--cream);">
+    <div class="container feature-card-wrap">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/waqar-11.png" alt="Share Your Travel Story">
+            <div class="feature-card-body">
+              <h3>Share Your Travel Story</h3>
+              <p>Inspire fellow adventurers with your mountain experiences and journey highlights.</p>
+              <a href="blog.html" class="feature-card-arrow">Read Stories <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/waqar-2.png" alt="Discover Mountain Destinations">
+            <div class="feature-card-body">
+              <h3>Discover Mountain Destinations</h3>
+              <p>Explore our handpicked collection of Pakistan's most breathtaking landscapes.</p>
+              <a href="destination.html" class="feature-card-arrow">Explore Now <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/waqar-23.png" alt="Plan Your Safe Journey">
+            <div class="feature-card-body">
+              <h3>Plan Your Safe Journey</h3>
+              <p>Expert-guided tours with full safety support, accommodation and transfers included.</p>
+              <a href="contact.html" class="feature-card-arrow">Book Now <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MINI SERVICES ─────────────────────────────────────── -->
+  <div class="site-section" style="background: var(--cream); padding-top: 80px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="service-mini">
+            <div class="unit-4-icon"><span class="flaticon-airplane"></span></div>
+            <h3>Air Ticketing</h3>
+            <p>We handle your flights so you don't have to. Best fares with flexible booking options.</p>
+            <a href="contact.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-mini">
+            <div class="unit-4-icon"><span class="flaticon-hotel"></span></div>
+            <h3>Hotel & Accommodation</h3>
+            <p>From cozy mountain lodges to luxury resorts — comfort and convenience guaranteed.</p>
+            <a href="contact.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-mini">
+            <div class="unit-4-icon"><span class="flaticon-route"></span></div>
+            <h3>Tour Packages</h3>
+            <p>Fully guided packages tailored to every traveler — from budget to luxury retreats.</p>
+            <a href="destination.html">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── DESTINATIONS ──────────────────────────────────────── -->
+  <div class="site-section" style="background: var(--white); padding-top: 80px; padding-bottom: 80px;">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-7 text-center">
+          <span class="section-sub">Explore Pakistan & Beyond</span>
+          <h2 class="section-heading">Our Destinations</h2>
+          <div class="ornament-divider"><span>✦</span></div>
+          <p class="section-desc">Handpicked mountain wonders for every kind of traveler — from family getaways to solo adventures.</p>
+        </div>
+      </div>
+      <div class="row g-3 mt-3">
+        <div class="col-md-4 col-lg-4">
+          <a href="destination.html" class="dest-card">
+            <img src="images/ser-1.jpeg" alt="Naran">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">KPK, Pakistan</span>
+              <div class="dest-card-name">Naran</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a href="destination.html" class="dest-card">
+            <img src="images/waqar-15.png" alt="Fairy Meadows">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">Gilgit-Baltistan</span>
+              <div class="dest-card-name">Fairy Meadows</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a href="destination.html" class="dest-card">
+            <img src="images/hunza.jpeg" alt="Hunza Valley">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">Gilgit-Baltistan</span>
+              <div class="dest-card-name">Hunza Valley</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <a href="destination.html" class="dest-card">
+            <img src="images/waqar-23.png" alt="Skardu">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">Gilgit-Baltistan</span>
+              <div class="dest-card-name">Skardu</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <a href="destination.html" class="dest-card">
+            <img src="images/gilgit.jpeg" alt="Swat">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">KPK, Pakistan</span>
+              <div class="dest-card-name">Swat</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <a href="destination.html" class="dest-card">
+            <img src="images/neelum.jpeg" alt="Neelum Valley">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">AJK, Pakistan</span>
+              <div class="dest-card-name">Neelum Valley</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="destination.html" class="dest-card">
+            <img src="images/kumrat.jpeg" alt="Kumrat Valley">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">KPK, Pakistan</span>
+              <div class="dest-card-name">Kumrat Valley</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-lg-4">
+          <a href="destination.html" class="dest-card">
+            <img src="images/muree.jpeg" alt="Murree Nathia Gali">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">Punjab, Pakistan</span>
+              <div class="dest-card-name">Murree &amp; Nathia Gali</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-lg-4">
+          <a href="destination.html" class="dest-card">
+            <img src="images/sikh-yitra.avif" alt="Sikh Yatra">
+            <div class="dest-card-overlay">
+              <span class="dest-card-tag">Religious Tour</span>
+              <div class="dest-card-name">Sikh-Yatra</div>
+              <div class="dest-card-explore">Explore destination →</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-lg-4">
+  <a href="destination.html" class="dest-card">
+    <img src="images/Shangrila Resort.jpg" alt="Shangrila Resort Skardu">
+    <div class="dest-card-overlay">
+      <span class="dest-card-tag">Luxury Resort</span>
+      <div class="dest-card-name">Shangrila Resort</div>
+      <div class="dest-card-explore">Explore destination →</div>
+    </div>
+  </a>
+</div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="destination.html" class="btn-outline-gold">View All Destinations</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── VIDEO SECTION ─────────────────────────────────────── -->
+  <div class="video-section" style="background-image: url(images/waqar-8.png);">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-md-7" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=loJgXLTvBQs" class="play-btn popup-youtube">
+            <span class="icon-play"></span>
+          </a>
+          <h2 class="video-title">Experience Our<br>Outstanding Services</h2>
+          <p style="color: rgba(255,255,255,0.55); font-size: 0.88rem; margin-top: 16px; letter-spacing: 0.05em;">Watch how we make every journey unforgettable</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+  <div class="site-section testimonial-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center">
+          <span class="section-sub">Traveler Reviews</span>
+          <h2 class="section-heading">What Our Travelers Say</h2>
+          <div class="ornament-divider"><span>✦</span></div>
+        </div>
+      </div>
+      <div class="nonloop-block-13 owl-carousel">
+
+        <div class="item">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <img src="images/waqar-32.png" alt="Sarah Munir" class="testimonial-img w-100">
+              </div>
+              <div class="col-lg-7">
+                <div class="testimonial-box">
+                  <div class="quote-mark">"</div>
+                  <p class="testimonial-quote">Global Mountain made our Himalayan trip absolutely seamless. From hotel bookings to guided treks, every detail was perfectly arranged. It was the journey of a lifetime and we are already planning our next trip!</p>
+                  <div class="testimonial-author">— <strong>Sarah Munir</strong> &nbsp;·&nbsp; Honeymoon Traveler</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <img src="images/waqar-27.png" alt="Daniel Fernandez" class="testimonial-img w-100">
+              </div>
+              <div class="col-lg-7">
+                <div class="testimonial-box">
+                  <div class="quote-mark">"</div>
+                  <p class="testimonial-quote">I have traveled with many agencies but Global Mountain truly stands out. The tour package was beyond my expectations — stunning scenery, great accommodation and a friendly guide throughout.</p>
+                  <div class="testimonial-author">— <strong>Daniel Fernandez</strong> &nbsp;·&nbsp; International Traveler</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="container">
+            <div class="row align-items-stretch">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <img src="images/waqar-31.png" alt="Waqar Ahmed" class="testimonial-img w-100">
+              </div>
+              <div class="col-lg-7">
+                <div class="testimonial-box">
+                  <div class="quote-mark">"</div>
+                  <p class="testimonial-quote">Booking with Global Mountain was the best decision I made for my family vacation. The team handled everything from flights to accommodations. Our kids still talk about the mountain views every single day!</p>
+                  <div class="testimonial-author">— <strong>Waqar Ahmed</strong> &nbsp;·&nbsp; Family Adventure Tour</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FULL SERVICES ─────────────────────────────────────── -->
+  <div class="site-section" style="background: var(--cream); padding: 80px 0;">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center">
+          <span class="section-sub">What We Offer</span>
+          <h2 class="section-heading">Our Services</h2>
+          <div class="ornament-divider"><span>✦</span></div>
+          <p class="section-desc">Everything you need for the perfect mountain journey — all in one place.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon"><span class="flaticon-airplane"></span></div>
+            <h3>Air Ticketing</h3>
+            <p>We secure the best flight deals to your dream destinations worldwide. Flexible booking with 24/7 support every step of the way.</p>
+            <a href="contact.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon"><span class="flaticon-route"></span></div>
+            <h3>Tour Packages</h3>
+            <p>From budget-friendly getaways to luxury mountain retreats, our fully guided packages are tailored to every type of traveler.</p>
+            <a href="destination.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon"><span class="flaticon-hotel"></span></div>
+            <h3>Hotel & Accommodation</h3>
+            <p>From cozy mountain lodges to luxury resorts, we arrange the perfect stay at every destination.</p>
+            <a href="contact.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon"><span class="flaticon-ski"></span></div>
+            <h3>Ski Experiences</h3>
+            <p>Hit the slopes at iconic ski resorts. We arrange lift passes, equipment rentals and professional instructors for all levels.</p>
+            <a href="destination.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon"><span class="flaticon-route"></span></div>
+            <h3>Trekking & Hiking</h3>
+            <p>Explore breathtaking trails with our expert local guides. Whether casual or summit-level, we plan every detail for your safety.</p>
+            <a href="destination.html">Learn More →</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-full">
+            <div class="service-icon">
+  <i class="fas fa-map"></i>
+</div>
+            <h3>Travel Insurance</h3>
+            <p>Travel with peace of mind. Our insurance covers trip cancellations, medical emergencies and lost baggage worldwide.</p>
+            <a href="contact.html">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BLOG ──────────────────────────────────────────────── -->
+  <div class="site-section" style="background: var(--white); padding: 80px 0;">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center">
+          <span class="section-sub">Latest from the Journal</span>
+          <h2 class="section-heading">Our Blog</h2>
+          <div class="ornament-divider"><span>✦</span></div>
+          <p class="section-desc">Travel tips, destination guides and mountain adventure stories.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="blog-card">
+            <img src="images/blog-2.jpeg" alt="Top 10 Mountain Treks">
+            <div class="blog-card-body">
+              <span class="blog-category">Adventure</span>
+              <h2><a href="blog.html">Top 10 Mountain Treks You Must Experience in Your Lifetime</a></h2>
+              <div class="blog-meta">by Sarah Munir &nbsp;·&nbsp; March 10, 2025</div>
+              <p>From the rugged trails of K2 in Pakistan to the iconic Everest Base Camp, we count down the world's most breathtaking mountain treks every traveler should experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="blog-card">
+            <img src="images/blog-1.jpeg" alt="Plan the Perfect Mountain Getaway">
+            <div class="blog-card-body">
+              <span class="blog-category">Travel Tips</span>
+              <h2><a href="blog.html">How to Plan the Perfect Mountain Getaway on Any Budget</a></h2>
+              <div class="blog-meta">by Usman Khaliq &nbsp;·&nbsp; February 22, 2025</div>
+              <p>Planning a mountain trip doesn't have to break the bank. Expert tips on choosing destinations, booking affordable accommodation and making the most of every moment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="blog.html" class="btn-outline-gold">View All Blog Posts</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA STRIP ─────────────────────────────────────────── -->
+  <div class="cta-strip">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2>Ready to Begin Your Next<br>Mountain Adventure?</h2>
+          <p class="mt-3 mb-0">Let Global Mountain handle every detail — from flights to accommodation to guided treks. Your dream journey awaits.</p>
+        </div>
+        <div class="col-lg-5 text-lg-right">
+          <a href="contact.html" class="btn-gold">Book Your Journey</a>
+          &nbsp;&nbsp;
+          <a href="destination.html" class="btn-outline-white mt-2 mt-sm-0">Explore Destinations</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="row">
+
+        <!-- Brand -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="footer-brand-name">Global <span>Mountain</span></div>
+          <p class="footer-about">Your trusted travel partner for world-class mountain adventures and curated tour packages. From the peaks of the Himalayas to the trails of the Swiss Alps, we make every journey safe and unforgettable.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/globalmountain" target="_blank" title="LinkedIn"><span class="icon-linkedin"></span></a>
+            <a href="https://www.facebook.com/share/1BEBB5dZsY/" target="_blank" title="Facebook"><span class="icon-facebook"></span></a>
+            <a href="https://www.instagram.com/globalmountaintravelsandtours?igsh=MTc0cDJjNXl0aGVkMg==" target="_blank" title="Instagram"><span class="icon-instagram"></span></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-4 mb-5 mb-lg-0" style="padding-left: 40px;">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="discount.html">Discounts</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+          <h5 class="footer-heading">Contact Us</h5>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span class="footer-contact-text">3126-7 3rd Floor, Giga Mall,<br>DHA 2, Islamabad</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📍</span>
+            <span class="footer-contact-text">22-C Lane 08, Phase 06,<br>DHA Karachi</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span class="footer-contact-text"><a href="tel:+923212039066">+92 321 2039066</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">📞</span>
+            <span class="footer-contact-text"><a href="tel:+923022851235">0302-2851235</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon">✉️</span>
+            <span class="footer-contact-text"><a href="mailto:info@globalmountain.com">info@globalmountain.com</a></span>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-4">
+          <h5 class="footer-heading">Newsletter</h5>
+          <p style="font-size: 0.83rem; color: #555; line-height: 1.8; margin-bottom: 18px;">Get the latest travel deals, destination guides and adventure tips straight to your inbox.</p>
+          <div class="footer-newsletter">
+            <form action="#" method="post">
+              <input type="email" placeholder="Enter your email address">
+              <button type="submit">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="container footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p style="margin:0;">&copy; <script>document.write(new Date().getFullYear());</script> Global Mountain. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <p style="margin:0;">Crafted with <span style="color:var(--gold);">♥</span> for adventure seekers worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── WHATSAPP FLOATING BUTTON ───────────────────────────── -->
+  <a href="https://wa.me/923212039066?text=Hello%20Global%20Mountain!%20🏔️✈️%0AI'm%20interested%20in%20your%20travel%20packages%20and%20upcoming%20destinations.%20Please%20share%20details."
+    target="_blank" class="whatsapp-float" title="Chat with Global Mountain">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ── TOUR POPUP ─────────────────────────────────────────── -->
+  <div id="tourPopup" class="tour_popup">
+    <div class="tour_popup_content">
+      <span class="close_popup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupDesc"></p>
+      <a id="whatsappLink" class="whatsapp_btn_popup" target="_blank">
+        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+      </a>
+    </div>
+  </div>
+
+</div><!-- end site-wrap -->
+
+<!-- ── SCRIPTS ───────────────────────────────────────────────── -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  // Sticky header
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 10){
+      $('#mainHeader').addClass('scrolled');
+    } else {
+      $('#mainHeader').removeClass('scrolled');
+    }
+  });
+
+  // YouTube popup
+  $('.popup-youtube').magnificPopup({
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
+
+  // Tour Popup - open
+  $(".openPopup").click(function(e){
+    e.preventDefault();
+    var title = $(this).data("title");
+    var desc  = $(this).data("desc");
+    $("#popupTitle").text(title);
+    $("#popupDesc").text(desc);
+    var msg = encodeURIComponent(
+      "Hello Global Mountain! 🏔️\nI am interested in the " + title + " tour package. Please share more details and pricing."
+    );
+    $("#whatsappLink").attr("href","https://wa.me/923212039066?text=" + msg);
+    $("#tourPopup").fadeIn(300);
+  });
+
+  // Tour Popup - close
+  $(".close_popup").click(function(){
+    $("#tourPopup").fadeOut(300);
+  });
+  $("#tourPopup").click(function(e){
+    if($(e.target).is("#tourPopup")){ $("#tourPopup").fadeOut(300); }
+  });
+  $(document).keyup(function(e){
+    if(e.key === "Escape"){ $("#tourPopup").fadeOut(300); }
+  });
+
+});
+</script>
+
+</body>
+</html>
