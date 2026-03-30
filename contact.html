@@ -14,7 +14,7 @@
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -44,14 +44,15 @@
 
     *, *::before, *::after { box-sizing: border-box; }
 
+    html, body { overflow-x: hidden; width: 100%; }
+
     body {
-      font-family: 'Jost', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background: var(--cream);
       color: var(--ink);
-      overflow-x: hidden;
     }
 
-    /* TOP BAR */
+    /* ── TOP BAR ── */
     .top-bar {
       background: var(--ink); color: rgba(255,255,255,0.55);
       font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
@@ -60,7 +61,7 @@
     .top-bar a { color: var(--gold); text-decoration: none; }
     .top-bar span { margin: 0 16px; }
 
-    /* NAVBAR */
+    /* ── NAVBAR ── */
     .site-navbar {
       position: fixed !important; top: 28px; left: 0; right: 0;
       width: 100%; z-index: 999; background: rgba(250,248,244,0.97);
@@ -73,7 +74,7 @@
     .navbar-logo img { height: 70px; width: auto; }
 
     .site-menu > li > a {
-      font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 500;
+      font-family: 'Raleway', sans-serif; font-size: 0.75rem; font-weight: 600;
       letter-spacing: 0.14em; text-transform: uppercase;
       color: var(--muted) !important; transition: color 0.2s;
       padding: 8px 14px !important; position: relative;
@@ -107,7 +108,7 @@
     }
     .header-social a:hover { border-color: var(--gold); color: var(--gold); }
 
-    /* PAGE HERO */
+    /* ── PAGE HERO ── */
     .page-hero {
       position: relative; background-size: cover; background-position: center;
       min-height: 420px; display: flex; align-items: flex-end; padding-bottom: 60px;
@@ -123,8 +124,8 @@
       border: 1px solid var(--gold-lt); padding: 5px 16px; margin-bottom: 16px;
     }
     .page-hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 300;
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(2rem, 6vw, 4rem); font-weight: 300;
       color: var(--white); line-height: 1.1; margin-bottom: 16px;
     }
     .breadcrumb-bar {
@@ -133,14 +134,16 @@
     }
     .breadcrumb-bar a { color: var(--gold-lt); text-decoration: none; }
 
-    /* HELPERS */
+    /* ── HELPERS ── */
     .section-sub {
       font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
       color: var(--gold); display: block; margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif; font-weight: 600;
     }
     .section-heading {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.4rem; font-weight: 300; color: var(--ink); line-height: 1.2;
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 300;
+      color: var(--ink); line-height: 1.2;
     }
     .ornament-divider {
       display: flex; align-items: center; gap: 16px;
@@ -151,7 +154,7 @@
     }
     .ornament-divider span { color: var(--gold); font-size: 0.9rem; }
 
-    /* CONTACT INFO CARDS */
+    /* ── CONTACT INFO CARDS ── */
     .contact-info-card {
       background: var(--white); padding: 36px 30px;
       border-bottom: 3px solid transparent;
@@ -172,42 +175,37 @@
     .contact-info-icon i { font-size: 1.3rem; color: var(--gold); transition: color 0.3s; }
     .contact-info-card:hover .contact-info-icon i { color: var(--white); }
     .contact-info-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem; font-weight: 400; margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.05rem; font-weight: 600; margin-bottom: 10px; color: var(--ink);
     }
-    .contact-info-card p {
-      font-size: 0.83rem; color: var(--muted); line-height: 1.8; margin: 0;
-    }
-    .contact-info-card a {
-      color: var(--muted); text-decoration: none; transition: color 0.2s;
-    }
+    .contact-info-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.8; margin: 0; }
+    .contact-info-card a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
     .contact-info-card a:hover { color: var(--gold); }
 
-    /* CONTACT FORM */
+    /* ── CONTACT FORM ── */
     .contact-form-wrap {
       background: var(--white); padding: 52px 48px;
     }
     .contact-form-wrap h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem; font-weight: 300; color: var(--ink); margin-bottom: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8rem; font-weight: 300; color: var(--ink); margin-bottom: 8px;
     }
     .contact-form-wrap p {
       font-size: 0.85rem; color: var(--muted); line-height: 1.8; margin-bottom: 32px;
     }
     .form-label-gm {
       font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
-      color: var(--ink); font-weight: 500; margin-bottom: 8px; display: block;
+      color: var(--ink); font-weight: 600; margin-bottom: 8px; display: block;
+      font-family: 'Raleway', sans-serif;
     }
     .form-control-gm {
       width: 100%; border: 1px solid var(--sand); background: var(--cream);
       padding: 12px 16px; font-size: 0.85rem; outline: none;
-      font-family: 'Jost', sans-serif; color: var(--ink);
+      font-family: 'Open Sans', sans-serif; color: var(--ink);
       transition: border-color 0.2s, background 0.2s;
-      border-radius: 0; appearance: none;
+      border-radius: 0; appearance: none; -webkit-appearance: none;
     }
-    .form-control-gm:focus {
-      border-color: var(--gold); background: var(--white);
-    }
+    .form-control-gm:focus { border-color: var(--gold); background: var(--white); }
     .form-control-gm::placeholder { color: #bbb; }
     select.form-control-gm { cursor: pointer; }
     textarea.form-control-gm { resize: vertical; min-height: 140px; }
@@ -215,12 +213,12 @@
     .btn-submit {
       background: var(--gold); color: var(--white); border: none;
       padding: 14px 40px; font-size: 0.72rem; letter-spacing: 0.22em;
-      text-transform: uppercase; cursor: pointer; font-family: 'Jost', sans-serif;
+      text-transform: uppercase; cursor: pointer;
+      font-family: 'Raleway', sans-serif; font-weight: 600;
       transition: background 0.2s, transform 0.15s; width: 100%;
     }
     .btn-submit:hover { background: #9e6d2e; transform: translateY(-2px); }
 
-    /* SUCCESS MESSAGE */
     .form-success {
       display: none; background: rgba(181,129,62,0.08);
       border: 1px solid rgba(181,129,62,0.3);
@@ -228,30 +226,30 @@
       font-size: 0.85rem; color: var(--gold);
     }
 
-    /* SIDEBAR INFO */
-    .contact-sidebar { padding-left: 32px; }
+    /* ── SIDEBAR ── */
+    .contact-sidebar { padding-left: 28px; }
     .sidebar-office {
-      background: var(--white); padding: 32px 28px; margin-bottom: 24px;
+      background: var(--white); padding: 32px 28px; margin-bottom: 20px;
       border-left: 3px solid var(--gold);
     }
     .sidebar-office h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem; font-weight: 400; margin-bottom: 18px; color: var(--ink);
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem; font-weight: 600; margin-bottom: 18px; color: var(--ink);
     }
     .office-detail {
-      display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px;
+      display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px;
     }
     .office-detail-icon { color: var(--gold); font-size: 0.85rem; margin-top: 2px; flex-shrink: 0; }
-    .office-detail-text { font-size: 0.83rem; color: var(--muted); line-height: 1.7; }
+    .office-detail-text { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
     .office-detail-text a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
     .office-detail-text a:hover { color: var(--gold); }
 
     .sidebar-hours {
-      background: var(--ink); padding: 32px 28px; margin-bottom: 24px;
+      background: var(--ink); padding: 32px 28px; margin-bottom: 20px;
     }
     .sidebar-hours h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem; font-weight: 300; color: var(--white); margin-bottom: 18px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem; font-weight: 300; color: var(--white); margin-bottom: 18px;
     }
     .hours-row {
       display: flex; justify-content: space-between;
@@ -263,24 +261,23 @@
     .hours-row span:last-child { color: var(--gold-lt); }
 
     .sidebar-whatsapp {
-      background: #25D366; padding: 28px;
-      text-align: center;
+      background: #25D366; padding: 28px; text-align: center;
     }
     .sidebar-whatsapp i { font-size: 2rem; color: var(--white); margin-bottom: 12px; display: block; }
     .sidebar-whatsapp h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem; font-weight: 300; color: var(--white); margin-bottom: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem; font-weight: 500; color: var(--white); margin-bottom: 8px;
     }
-    .sidebar-whatsapp p { font-size: 0.78rem; color: rgba(255,255,255,0.75); margin-bottom: 16px; }
+    .sidebar-whatsapp p { font-size: 0.78rem; color: rgba(255,255,255,0.8); margin-bottom: 16px; }
     .sidebar-whatsapp a {
       display: inline-block; background: var(--white); color: #25D366;
       padding: 10px 24px; font-size: 0.7rem; letter-spacing: 0.18em;
       text-transform: uppercase; text-decoration: none; font-weight: 600;
-      transition: all 0.2s;
+      transition: all 0.2s; font-family: 'Raleway', sans-serif;
     }
     .sidebar-whatsapp a:hover { background: var(--ink); color: var(--white); }
 
-    /* MAP */
+    /* ── MAP ── */
     .map-section { background: var(--sand); }
     .map-wrap { position: relative; }
     .map-wrap iframe { width: 100%; height: 420px; border: none; display: block; }
@@ -292,22 +289,23 @@
       max-width: 280px;
     }
     .map-overlay-card h4 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem; font-weight: 400; color: var(--ink); margin-bottom: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 8px;
     }
     .map-overlay-card p { font-size: 0.78rem; color: var(--muted); line-height: 1.6; margin: 0; }
 
-    /* CTA */
+    /* ── CTA ── */
     .cta-strip { background: var(--ink); padding: 80px 0; }
     .cta-strip h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.8rem); font-weight: 300; color: var(--white);
     }
     .cta-strip p { color: rgba(255,255,255,0.5); font-size: 0.88rem; line-height: 1.8; }
     .btn-gold {
       background: var(--gold); color: var(--white); border: none;
       padding: 14px 36px; font-size: 0.72rem; letter-spacing: 0.2em;
       text-transform: uppercase; text-decoration: none; display: inline-block;
+      font-family: 'Raleway', sans-serif; font-weight: 600;
       transition: background 0.2s, transform 0.15s;
     }
     .btn-gold:hover { background: #9e6d2e; color: var(--white); transform: translateY(-2px); }
@@ -315,15 +313,17 @@
       background: transparent; color: var(--white);
       border: 1px solid rgba(255,255,255,0.5); padding: 13px 36px;
       font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
-      text-decoration: none; display: inline-block; transition: all 0.2s;
+      text-decoration: none; display: inline-block;
+      font-family: 'Raleway', sans-serif; font-weight: 500;
+      transition: all 0.2s;
     }
     .btn-outline-white:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
 
-    /* FOOTER */
-    .site-footer { background: #0f0e0c; color: #888; font-family: 'Jost', sans-serif; }
+    /* ── FOOTER ── */
+    .site-footer { background: #0f0e0c; color: #888; font-family: 'Open Sans', sans-serif; }
     .footer-top { padding: 72px 0 56px; }
     .footer-brand-name {
-      font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300;
+      font-family: 'Raleway', sans-serif; font-size: 2rem; font-weight: 300;
       color: var(--white); letter-spacing: 0.05em; margin-bottom: 14px;
     }
     .footer-brand-name span { color: var(--gold); }
@@ -334,7 +334,11 @@
       color: #666; text-decoration: none; margin-right: 8px; font-size: 0.8rem; transition: all 0.25s;
     }
     .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
-    .footer-heading { font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--white); font-weight: 500; margin-bottom: 22px; }
+    .footer-heading {
+      font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--white); font-weight: 600; margin-bottom: 22px;
+      font-family: 'Raleway', sans-serif;
+    }
     .footer-links { list-style: none; padding: 0; margin: 0; }
     .footer-links li { margin-bottom: 10px; }
     .footer-links a { font-size: 0.85rem; color: #666; text-decoration: none; transition: color 0.2s, padding-left 0.2s; display: inline-block; }
@@ -347,7 +351,7 @@
     .footer-newsletter input {
       background: transparent; border: 1px solid #222; color: var(--white);
       padding: 11px 16px; font-size: 0.82rem; width: 100%; outline: none;
-      margin-bottom: 10px; font-family: 'Jost', sans-serif; transition: border-color 0.2s;
+      margin-bottom: 10px; font-family: 'Open Sans', sans-serif; transition: border-color 0.2s;
     }
     .footer-newsletter input:focus { border-color: var(--gold); }
     .footer-newsletter input::placeholder { color: #444; }
@@ -355,13 +359,13 @@
       background: var(--gold); color: var(--white); border: none;
       padding: 11px 16px; font-size: 0.7rem; letter-spacing: 0.18em;
       text-transform: uppercase; cursor: pointer; width: 100%;
-      font-family: 'Jost', sans-serif; transition: background 0.2s;
+      font-family: 'Raleway', sans-serif; transition: background 0.2s;
     }
     .footer-newsletter button:hover { background: #9e6d2e; }
     .footer-divider { border-top: 1px solid #1a1814; }
     .footer-bottom { padding: 20px 0; font-size: 0.78rem; color: #444; }
 
-    /* WHATSAPP */
+    /* ── WHATSAPP ── */
     .whatsapp-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 9999;
       width: 56px; height: 56px; background: #25D366; color: var(--white);
@@ -371,14 +375,153 @@
     }
     .whatsapp-float:hover { transform: scale(1.12); background: #1ebe5a; color: var(--white); }
 
-    @media (max-width: 1199px) { .header-social { display: none; } }
-    @media (max-width: 991px) {
-      .contact-sidebar { padding-left: 0; margin-top: 40px; }
-      .contact-form-wrap { padding: 36px 28px; }
-      .map-overlay-card { display: none; }
+
+    /* ════════════════════════════════════════════════════
+       RESPONSIVE FIXES
+    ════════════════════════════════════════════════════ */
+
+    @media (max-width: 1199px) {
+      .header-social { display: none !important; }
     }
+
+    /* ── Tablet (≤991px) ── */
+    @media (max-width: 991px) {
+      /* Fix navbar offset */
+      .site-navbar { top: 0 !important; }
+      body { padding-top: var(--nav-h) !important; }
+      .top-bar { display: none; }
+
+      /* Sidebar goes below form */
+      .contact-sidebar { padding-left: 0; margin-top: 32px; }
+
+      /* Form padding */
+      .contact-form-wrap { padding: 36px 28px; }
+
+      /* Map overlay hides on tablet */
+      .map-overlay-card { display: none; }
+
+      /* Info cards 2-col */
+      .contact-info-card:hover { transform: none; }
+
+      /* Page hero */
+      .page-hero { min-height: 320px; padding-bottom: 40px; }
+
+      /* CTA */
+      .cta-strip .col-lg-5 { margin-top: 28px; }
+    }
+
+    /* ── Mobile (≤767px) ── */
     @media (max-width: 767px) {
-      .contact-form-wrap { padding: 28px 20px; }
+      html, body { overflow-x: hidden; }
+
+      /* ── Navbar ── */
+      :root { --nav-h: 68px; }
+      .site-navbar { top: 0 !important; height: 68px; }
+      body { padding-top: 68px !important; }
+      .navbar-logo img { height: 52px; }
+      .top-bar { display: none; }
+
+      /* ── Page hero ── */
+      .page-hero { min-height: 200px; padding-bottom: 28px; }
+      .page-hero h1 { font-size: 1.8rem; margin-bottom: 8px; }
+      .page-hero-label { font-size: 0.58rem; padding: 4px 12px; margin-bottom: 8px; }
+      .breadcrumb-bar { font-size: 0.66rem; }
+
+      /* ── Section padding ── */
+      .site-section[style*="padding: 80px"] { padding: 48px 0 0 !important; }
+      .site-section[style*="padding: 60px"] { padding: 32px 0 48px !important; }
+
+      /* ── Headings ── */
+      .section-heading { font-size: 1.5rem !important; }
+      .ornament-divider { margin: 12px 0 28px; }
+
+      /* ── Info cards ── */
+      .contact-info-card {
+        padding: 24px 20px;
+        margin-bottom: 0;
+      }
+      .contact-info-card:hover { transform: none; box-shadow: none; }
+      .contact-info-icon { width: 48px; height: 48px; }
+      .contact-info-card h3 { font-size: 0.95rem; margin-bottom: 6px; }
+      .contact-info-card p { font-size: 0.82rem; }
+      /* 2-col grid on mobile */
+      .row.g-4 > [class*="col-md-6"][class*="col-lg-3"] { margin-bottom: 12px; }
+
+      /* ── Contact form ── */
+      .contact-form-wrap {
+        padding: 24px 18px;
+      }
+      .contact-form-wrap h2 { font-size: 1.4rem; }
+      .contact-form-wrap p { font-size: 0.83rem; margin-bottom: 20px; }
+      .form-label-gm { font-size: 0.66rem; }
+      .form-control-gm { padding: 11px 13px; font-size: 0.83rem; }
+      .form-group-gm { margin-bottom: 16px; }
+      /* Stack form rows on mobile */
+      .contact-form-wrap .row > [class*="col-md-6"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+      }
+      .btn-submit { padding: 13px 20px; font-size: 0.7rem; letter-spacing: 0.15em; }
+
+      /* ── Sidebar ── */
+      .contact-sidebar { padding-left: 0; margin-top: 24px; }
+      .sidebar-office { padding: 22px 18px; margin-bottom: 14px; }
+      .sidebar-office h3 { font-size: 0.9rem; margin-bottom: 14px; }
+      .office-detail-text { font-size: 0.8rem; }
+      .sidebar-hours { padding: 22px 18px; margin-bottom: 14px; }
+      .sidebar-hours h3 { font-size: 0.9rem; }
+      .hours-row { font-size: 0.75rem; padding: 7px 0; }
+      .sidebar-whatsapp { padding: 22px 18px; }
+      .sidebar-whatsapp i { font-size: 1.6rem; margin-bottom: 8px; }
+      .sidebar-whatsapp h3 { font-size: 0.95rem; }
+      .sidebar-whatsapp p { font-size: 0.76rem; }
+
+      /* ── Map ── */
+      .map-wrap iframe { height: 260px; }
+      .map-overlay-card { display: none; }
+
+      /* ── CTA ── */
+      .cta-strip { padding: 48px 0; }
+      .cta-strip h2 { font-size: 1.5rem; }
+      .cta-strip .col-lg-5 { margin-top: 24px; }
+      .btn-gold, .btn-outline-white {
+        display: block; width: 100%; text-align: center;
+        margin-bottom: 12px; padding: 14px 20px;
+      }
+
+      /* ── Footer ── */
+      .footer-top { padding: 44px 0 28px; }
+      .footer-brand-name { font-size: 1.5rem; }
+      .footer-top .col-lg-4,
+      .footer-top [class*="col-md-4"],
+      .footer-top .col-lg-2,
+      .footer-top .col-lg-3 {
+        margin-bottom: 28px !important;
+        padding-left: 15px !important;
+      }
+      .footer-bottom .row { text-align: center; }
+      .footer-bottom .col-md-6:first-child { margin-bottom: 6px; }
+
+      /* ── WhatsApp ── */
+      .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; font-size: 1.3rem; }
+
+      /* ── Container padding ── */
+      .container { padding-left: 16px; padding-right: 16px; }
+    }
+
+    /* ── Small phones (≤420px) ── */
+    @media (max-width: 420px) {
+      .page-hero h1 { font-size: 1.5rem; }
+      .section-heading { font-size: 1.25rem !important; }
+      .navbar-logo img { height: 46px; }
+      .contact-form-wrap { padding: 18px 14px; }
+      .contact-form-wrap h2 { font-size: 1.2rem; }
+      .sidebar-office,
+      .sidebar-hours,
+      .sidebar-whatsapp { padding: 18px 14px; }
+      .map-wrap iframe { height: 220px; }
+      .btn-gold, .btn-outline-white { font-size: 0.67rem; letter-spacing: 0.1em; }
     }
   </style>
 </head>
@@ -427,7 +570,7 @@
                   <li><a href="destination.html">Skardu</a></li>
                   <li><a href="destination.html">Fairy Meadows</a></li>
                   <li><a href="destination.html">Hunza Valley</a></li>
-                  <li><a href="destination.html">Sikh-Yatra</a></li>
+                  <li><a href="destination.html">Shangrila Resort</a></li>
                 </ul>
               </li>
               <li><a href="discount.html">Discount</a></li>
@@ -475,21 +618,21 @@
         </div>
       </div>
       <div class="row g-4 mb-5">
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-info-card">
             <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
             <h3>Islamabad Office</h3>
             <p>3126-7 3rd Floor, Giga Mall,<br>DHA Phase 2, Islamabad</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
           <div class="contact-info-card">
             <div class="contact-info-icon"><i class="fa fa-location-dot"></i></div>
             <h3>Karachi Office</h3>
             <p>22-C Lane 08, Phase 06,<br>DHA Karachi</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
           <div class="contact-info-card">
             <div class="contact-info-icon"><i class="fa fa-phone"></i></div>
             <h3>Call Us</h3>
@@ -499,7 +642,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
           <div class="contact-info-card">
             <div class="contact-info-icon"><i class="fa fa-envelope"></i></div>
             <h3>Email Us</h3>
@@ -560,15 +703,15 @@
                 <label class="form-label-gm" for="destination">Interested Destination</label>
                 <select id="destination" class="form-control-gm">
                   <option value="" disabled selected>Select a destination...</option>
-                  <option>Naran & Kaghan Valley</option>
+                  <option>Naran &amp; Kaghan Valley</option>
                   <option>Skardu</option>
                   <option>Hunza Valley</option>
                   <option>Fairy Meadows</option>
                   <option>Swat Valley</option>
                   <option>Neelum Valley</option>
                   <option>Kumrat Valley</option>
-                  <option>Murree & Nathia Gali</option>
-                  <option>Sikh-Yatra Tour</option>
+                  <option>Murree &amp; Nathia Gali</option>
+                  <option>Shangrila Resort</option>
                   <option>Custom / Other</option>
                 </select>
               </div>
@@ -618,7 +761,6 @@
         <div class="col-lg-4" data-aos="fade-left">
           <div class="contact-sidebar">
 
-            <!-- Islamabad Office -->
             <div class="sidebar-office">
               <h3>🏢 Islamabad Office</h3>
               <div class="office-detail">
@@ -639,7 +781,6 @@
               </div>
             </div>
 
-            <!-- Karachi Office -->
             <div class="sidebar-office">
               <h3>🏢 Karachi Office</h3>
               <div class="office-detail">
@@ -656,7 +797,6 @@
               </div>
             </div>
 
-            <!-- Office Hours -->
             <div class="sidebar-hours">
               <h3>Office Hours</h3>
               <div class="hours-row"><span>Monday – Friday</span><span>9:00 AM – 7:00 PM</span></div>
@@ -665,7 +805,6 @@
               <div class="hours-row"><span>WhatsApp</span><span>24/7 Available</span></div>
             </div>
 
-            <!-- WhatsApp -->
             <div class="sidebar-whatsapp">
               <i class="fab fa-whatsapp"></i>
               <h3>Chat on WhatsApp</h3>
