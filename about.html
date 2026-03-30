@@ -14,7 +14,7 @@
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -46,7 +46,7 @@
     *, *::before, *::after { box-sizing: border-box; }
 
     body {
-      font-family: 'Jost', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background: var(--cream);
       color: var(--ink);
       overflow-x: hidden;
@@ -88,7 +88,7 @@
     .navbar-logo img { height: 70px; width: auto; }
 
     .site-menu > li > a {
-      font-family: 'Jost', sans-serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 0.75rem;
       font-weight: 500;
       letter-spacing: 0.14em;
@@ -174,7 +174,7 @@
       margin-bottom: 16px;
     }
     .page-hero h1 {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: clamp(2.4rem, 6vw, 4rem);
       font-weight: 300;
       color: var(--white);
@@ -198,9 +198,11 @@
       color: var(--gold);
       display: block;
       margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
     }
     .section-heading {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 2.4rem;
       font-weight: 300;
       color: var(--ink);
@@ -231,9 +233,7 @@
     .ornament-divider.center::after { max-width: 80px; }
 
     /* ─── ABOUT SECTION ──────────────────────────────────── */
-    .about-img-wrap {
-      position: relative;
-    }
+    .about-img-wrap { position: relative; }
     .about-img-wrap img {
       width: 100%;
       height: 520px;
@@ -254,7 +254,7 @@
       text-align: center;
     }
     .about-img-badge .num {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 2.8rem;
       font-weight: 300;
       line-height: 1;
@@ -287,13 +287,10 @@
     .checklist li .check-icon i { font-size: 0.6rem; color: var(--gold); }
 
     /* ─── STATS ──────────────────────────────────────────── */
-    .stats-section {
-      background: var(--ink);
-      padding: 60px 0;
-    }
+    .stats-section { background: var(--ink); padding: 60px 0; }
     .stat-item { text-align: center; padding: 20px; }
     .stat-num {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 3.5rem;
       font-weight: 300;
       color: var(--gold);
@@ -305,11 +302,6 @@
       text-transform: uppercase;
       color: rgba(255,255,255,0.45);
       margin-top: 8px;
-    }
-    .stat-divider {
-      width: 1px;
-      background: rgba(255,255,255,0.08);
-      align-self: stretch;
     }
 
     /* ─── WHY US ─────────────────────────────────────────── */
@@ -336,17 +328,13 @@
     .why-icon i { font-size: 1.3rem; color: var(--gold); transition: color 0.3s; }
     .why-card:hover .why-icon i { color: var(--white); }
     .why-card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
-      font-weight: 400;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
       margin-bottom: 10px;
+      color: var(--ink);
     }
-    .why-card p {
-      font-size: 0.84rem;
-      color: var(--muted);
-      line-height: 1.8;
-      margin: 0;
-    }
+    .why-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.8; margin: 0; }
 
     /* ─── TEAM ───────────────────────────────────────────── */
     .team-card {
@@ -358,10 +346,7 @@
       box-shadow: 0 16px 56px rgba(15,14,12,0.1);
       transform: translateY(-5px);
     }
-    .team-img-wrap {
-      position: relative;
-      overflow: hidden;
-    }
+    .team-img-wrap { position: relative; overflow: hidden; }
     .team-img-wrap img {
       width: 100%;
       height: 300px;
@@ -371,12 +356,9 @@
     }
     .team-card:hover .team-img-wrap img { transform: scale(1.05); }
     .team-overlay {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background: rgba(10,8,6,0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       gap: 12px;
       opacity: 0;
       transition: opacity 0.3s;
@@ -386,39 +368,21 @@
       width: 36px; height: 36px;
       border: 1px solid rgba(255,255,255,0.6);
       display: flex; align-items: center; justify-content: center;
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.8rem;
+      color: var(--white); text-decoration: none; font-size: 0.8rem;
       transition: all 0.2s;
     }
-    .team-overlay a:hover {
-      background: var(--gold);
-      border-color: var(--gold);
-    }
-    .team-body {
-      padding: 24px 24px 28px;
-      text-align: center;
-    }
+    .team-overlay a:hover { background: var(--gold); border-color: var(--gold); }
+    .team-body { padding: 24px 24px 28px; text-align: center; }
     .team-role {
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 8px;
-      display: block;
+      font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 8px; display: block;
+      font-family: 'Raleway', sans-serif; font-weight: 600;
     }
     .team-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem; font-weight: 600; color: var(--ink); margin-bottom: 10px;
     }
-    .team-bio {
-      font-size: 0.83rem;
-      color: var(--muted);
-      line-height: 1.8;
-    }
+    .team-bio { font-size: 0.83rem; color: var(--muted); line-height: 1.8; }
 
     /* ─── TESTIMONIALS ───────────────────────────────────── */
     .testimonial-section { background: var(--sand); }
@@ -426,50 +390,31 @@
       background: var(--white);
       padding: 48px 44px;
       height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: flex; flex-direction: column; justify-content: center;
     }
     .quote-mark {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 6rem;
-      line-height: 0.6;
-      color: var(--gold);
-      opacity: 0.3;
-      margin-bottom: 16px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 6rem; line-height: 0.6;
+      color: var(--gold); opacity: 0.3; margin-bottom: 16px;
     }
     .testimonial-quote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      font-weight: 300;
-      font-style: italic;
-      line-height: 1.8;
-      color: var(--ink);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem; font-weight: 300; font-style: italic;
+      line-height: 1.9; color: var(--ink);
     }
     .testimonial-author {
-      font-size: 0.72rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 20px;
+      font-size: 0.72rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--muted); margin-top: 20px;
     }
     .testimonial-author strong { color: var(--gold); }
-    .testimonial-img {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-    }
+    .testimonial-img { width: 100%; height: 420px; object-fit: cover; }
 
     /* ─── CTA STRIP ──────────────────────────────────────── */
-    .cta-strip {
-      background: var(--ink);
-      padding: 80px 0;
-    }
+    .cta-strip { background: var(--ink); padding: 80px 0; }
     .cta-strip h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 300;
-      color: var(--white);
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      font-weight: 300; color: var(--white);
     }
     .cta-strip p { color: rgba(255,255,255,0.5); font-size: 0.88rem; line-height: 1.8; }
 
@@ -478,6 +423,7 @@
       background: var(--gold); color: var(--white); border: none;
       padding: 14px 36px; font-size: 0.72rem; letter-spacing: 0.2em;
       text-transform: uppercase; text-decoration: none; display: inline-block;
+      font-family: 'Raleway', sans-serif; font-weight: 600;
       transition: background 0.2s, transform 0.15s;
     }
     .btn-gold:hover { background: #9e6d2e; color: var(--white); transform: translateY(-2px); }
@@ -486,15 +432,16 @@
       border: 1px solid rgba(255,255,255,0.5);
       padding: 13px 36px; font-size: 0.72rem; letter-spacing: 0.2em;
       text-transform: uppercase; text-decoration: none; display: inline-block;
+      font-family: 'Raleway', sans-serif; font-weight: 500;
       transition: all 0.2s;
     }
     .btn-outline-white:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
 
     /* ─── FOOTER ─────────────────────────────────────────── */
-    .site-footer { background: #0f0e0c; color: #888; font-family: 'Jost', sans-serif; }
+    .site-footer { background: #0f0e0c; color: #888; font-family: 'Open Sans', sans-serif; }
     .footer-top { padding: 72px 0 56px; }
     .footer-brand-name {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 2rem; font-weight: 300;
       color: var(--white); letter-spacing: 0.05em; margin-bottom: 14px;
     }
@@ -509,7 +456,8 @@
     .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
     .footer-heading {
       font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--white); font-weight: 500; margin-bottom: 22px;
+      color: var(--white); font-weight: 600; margin-bottom: 22px;
+      font-family: 'Raleway', sans-serif;
     }
     .footer-links { list-style: none; padding: 0; margin: 0; }
     .footer-links li { margin-bottom: 10px; }
@@ -526,7 +474,7 @@
     .footer-newsletter input {
       background: transparent; border: 1px solid #222; color: var(--white);
       padding: 11px 16px; font-size: 0.82rem; width: 100%; outline: none;
-      margin-bottom: 10px; font-family: 'Jost', sans-serif; transition: border-color 0.2s;
+      margin-bottom: 10px; font-family: 'Open Sans', sans-serif; transition: border-color 0.2s;
     }
     .footer-newsletter input:focus { border-color: var(--gold); }
     .footer-newsletter input::placeholder { color: #444; }
@@ -534,7 +482,7 @@
       background: var(--gold); color: var(--white); border: none;
       padding: 11px 16px; font-size: 0.7rem; letter-spacing: 0.18em;
       text-transform: uppercase; cursor: pointer; width: 100%;
-      font-family: 'Jost', sans-serif; transition: background 0.2s;
+      font-family: 'Raleway', sans-serif; transition: background 0.2s;
     }
     .footer-newsletter button:hover { background: #9e6d2e; }
     .footer-divider { border-top: 1px solid #1a1814; }
@@ -567,8 +515,8 @@
       to   { opacity: 1; transform: translateY(0); }
     }
     .tour_popup_content h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem; font-weight: 400; color: var(--ink); margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem; font-weight: 500; color: var(--ink); margin-bottom: 10px;
     }
     .tour_popup_content p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
     .close_popup {
@@ -584,11 +532,174 @@
     }
     .whatsapp_btn_popup:hover { background: #1ebe5a; color: var(--white); transform: translateY(-2px); }
 
-    @media (max-width: 1199px) { .header-social { display: none; } }
+    /* ════════════════════════════════════════════════════
+       RESPONSIVE — ALL MOBILE FIXES
+    ════════════════════════════════════════════════════ */
+
+    /* Hide social icons on smaller desktops */
+    @media (max-width: 1199px) {
+      .header-social { display: none !important; }
+    }
+
+    /* ── Tablet (≤991px) ── */
+    @media (max-width: 991px) {
+      /* Navbar: remove the top-bar offset so nav doesn't float */
+      .site-navbar { top: 0 !important; }
+      body { padding-top: var(--nav-h) !important; }
+      .top-bar { display: none; }
+
+      .about-img-wrap img { height: 380px; }
+      .about-img-badge { right: 0; bottom: -20px; width: 120px; height: 120px; }
+      .about-img-badge .num { font-size: 2.2rem; }
+
+      .page-hero { min-height: 340px; padding-bottom: 40px; }
+
+      .team-img-wrap img { height: 260px; }
+      .testimonial-img { height: 320px; }
+      .testimonial-box { padding: 32px 28px; }
+
+      .cta-strip .col-lg-5 { margin-top: 28px; }
+    }
+
+    /* ── Mobile (≤767px) ── */
     @media (max-width: 767px) {
-      .about-img-badge { right: 0; bottom: 0; width: 110px; height: 110px; }
-      .about-img-wrap img { height: 360px; }
-      .testimonial-img { height: 260px; }
+      /* ── Base body / overflow ── */
+      html, body { overflow-x: hidden; width: 100%; }
+
+      /* ── Navbar ── */
+      :root { --nav-h: 68px; }
+      .site-navbar { top: 0 !important; height: 68px; }
+      body { padding-top: 68px !important; }
+      .navbar-logo img { height: 52px; }
+
+      /* ── Top bar ── */
+      .top-bar { display: none; }
+
+      /* ── Page hero ── */
+      .page-hero {
+        min-height: 220px;
+        padding-bottom: 28px;
+        background-position: center center;
+      }
+      .page-hero h1 { font-size: 1.9rem; margin-bottom: 10px; }
+      .page-hero-label { font-size: 0.58rem; padding: 4px 12px; margin-bottom: 10px; }
+      .breadcrumb-bar { font-size: 0.68rem; }
+
+      /* ── About section ── */
+      .site-section[style*="padding: 100px"] { padding: 52px 0 !important; }
+      .about-img-wrap { margin-bottom: 52px; }
+      .about-img-wrap img { height: 240px; }
+      .about-img-badge {
+        right: 12px;
+        bottom: -18px;
+        width: 100px;
+        height: 100px;
+      }
+      .about-img-badge .num { font-size: 1.8rem; }
+      .about-img-badge .lbl { font-size: 0.52rem; }
+
+      /* ── Section headings & text ── */
+      .section-heading { font-size: 1.5rem !important; }
+      .section-desc { font-size: 0.86rem; }
+      .ornament-divider { margin: 10px 0 20px; }
+
+      /* ── Checklist ── */
+      .checklist li { font-size: 0.83rem; }
+
+      /* ── Stats ── */
+      .stats-section { padding: 40px 0; }
+      .stat-item { padding: 14px 8px; }
+      .stat-num { font-size: 2rem; }
+      .stat-label { font-size: 0.62rem; letter-spacing: 0.12em; }
+
+      /* ── Why us cards ── */
+      .site-section[style*="padding: 80px"] { padding: 52px 0 !important; }
+      .why-card { padding: 26px 22px; margin-bottom: 0; }
+      .why-card:hover { transform: none; box-shadow: none; }
+      .why-card h3 { font-size: 1rem; }
+      .row.g-4 > [class*="col-"] { margin-bottom: 16px; }
+
+      /* ── Team cards ── */
+      .team-card { margin-bottom: 20px; }
+      .team-img-wrap img { height: 220px; }
+      /* Always show overlay on mobile (no hover on touch) */
+      .team-overlay {
+        opacity: 1;
+        background: rgba(10,8,6,0.3);
+      }
+      .team-body { padding: 18px 16px 22px; }
+      .team-name { font-size: 1.1rem; }
+      .team-bio { font-size: 0.8rem; }
+
+      /* ── Testimonials ── */
+      .testimonial-section { padding: 52px 0 !important; }
+      .testimonial-img { height: 200px !important; width: 100%; margin-bottom: 0; }
+      .testimonial-box { padding: 24px 20px; height: auto; }
+      .testimonial-quote { font-size: 0.9rem; line-height: 1.8; }
+      .quote-mark { font-size: 3.5rem; margin-bottom: 10px; }
+      .testimonial-author { font-size: 0.65rem; margin-top: 14px; }
+      /* Stack image on top of quote box */
+      .nonloop-block-13 .row { flex-direction: column; }
+      .nonloop-block-13 .col-lg-5,
+      .nonloop-block-13 .col-lg-7 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+      }
+      .nonloop-block-13 .col-lg-5 { margin-bottom: 0 !important; }
+
+      /* ── CTA strip ── */
+      .cta-strip { padding: 52px 0 !important; }
+      .cta-strip h2 { font-size: 1.5rem; }
+      .cta-strip p { font-size: 0.84rem; }
+      .cta-strip .col-lg-5 { margin-top: 24px; }
+      /* Stack CTA buttons full-width */
+      .btn-gold,
+      .btn-outline-white {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 12px;
+        padding: 14px 20px;
+      }
+      /* Remove the nbsp spacer gap */
+      .cta-strip .col-lg-5 > br { display: none; }
+
+      /* ── Footer ── */
+      .footer-top { padding: 48px 0 32px; }
+      .footer-brand-name { font-size: 1.6rem; }
+      /* Each footer col gets proper spacing */
+      .footer-top .col-lg-4,
+      .footer-top .col-lg-2,
+      .footer-top .col-lg-3,
+      .footer-top [class*="col-md-4"] {
+        margin-bottom: 32px !important;
+        padding-left: 15px !important;
+      }
+      .footer-bottom .row { text-align: center; }
+      .footer-bottom .col-md-6 { margin-bottom: 6px; }
+      .footer-social a { margin-bottom: 8px; }
+
+      /* ── Popup ── */
+      .tour_popup_content { padding: 32px 22px; margin: 14% auto; }
+      .tour_popup_content h2 { font-size: 1.2rem; }
+
+      /* ── WhatsApp button ── */
+      .whatsapp-float { bottom: 16px; right: 16px; width: 50px; height: 50px; font-size: 1.3rem; }
+
+      /* ── Container padding ── */
+      .container { padding-left: 16px; padding-right: 16px; }
+    }
+
+    /* ── Small phones (≤420px) ── */
+    @media (max-width: 420px) {
+      .page-hero h1 { font-size: 1.6rem; }
+      .section-heading { font-size: 1.3rem !important; }
+      .about-img-wrap img { height: 200px; }
+      .stat-num { font-size: 1.7rem; }
+      .navbar-logo img { height: 46px; }
+      .team-img-wrap img { height: 190px; }
+      .btn-gold, .btn-outline-white { font-size: 0.68rem; letter-spacing: 0.12em; }
     }
   </style>
 </head>
@@ -639,7 +750,7 @@
                   <li><a href="destination.html">Skardu</a></li>
                   <li><a href="destination.html">Fairy Meadows</a></li>
                   <li><a href="destination.html">Hunza Valley</a></li>
-                  <li><a href="destination.html">Sikh-Yatra</a></li>
+                  <li><a href="destination.html">Shangrila Resort</a></li>
                 </ul>
               </li>
               <li><a href="discount.html">Discount</a></li>
@@ -839,7 +950,7 @@
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="team-card">
             <div class="team-img-wrap">
-              <img src="images/Mazhar-iqbal.jpeg" alt="Mazhar-iqbal">
+              <img src="images/Mazhar-iqbal.jpeg" alt="Mazhar Iqbal">
               <div class="team-overlay">
                 <a href="#" title="LinkedIn"><span class="icon-linkedin"></span></a>
                 <a href="#" title="Instagram"><span class="icon-instagram"></span></a>
@@ -857,7 +968,7 @@
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
           <div class="team-card">
             <div class="team-img-wrap">
-              <img src="images/brigade - Edited.jpg" alt="Brig mohsin">
+              <img src="images/brigade - Edited.jpg" alt="Brig Mohsin Farooq">
               <div class="team-overlay">
                 <a href="#" title="LinkedIn"><span class="icon-linkedin"></span></a>
                 <a href="#" title="Instagram"><span class="icon-instagram"></span></a>
